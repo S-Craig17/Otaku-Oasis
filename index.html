@@ -88,186 +88,190 @@
   </header>
    
   <main>
-    <section class="featured-manga py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Featured Manga</h2>
-        <div class="row">
-          <!-- Manga Cards Grid -->
-          <!-- Repeat similar structure for multiple manga -->
-          <div class="col-md-3 mb-4">
-            <div class="card">
-              <img src="images/atelier.jpg" class="card-img-top img-fluid" style="width: 100%;" alt="Manga Cover">
-              <div class="card-body">
-                <h5 class="card-title">Manga Title</h5>
-                <p class="card-text">$14.99</p>
-                <a href="#" class="btn btn-warning">Add to Cart</a>
+    <!-- Featured Manga Section with Text on Right Side of Image -->
+<section class="featured-manga py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured Manga</h2>
+    
+    <!-- Row for each manga item -->
+    <div class="row align-items-center mb-4">
+      <!-- Image on the left (col-md-6) -->
+      <div class="col-md-6">
+        <img src="images/atelier.jpg" class="img-fluid" style="width: 100%; height: 400px; object-fit: cover;" alt="Manga Cover">
+      </div>
+
+      <!-- Text on the right (col-md-6) -->
+      <div class="col-md-6">
+        <h5 class="card-title" style="font-weight: bold;">Tongari Boushi no Atelier</h5>
+        <br>
+        <p class="card-text">Coco, a dressmaker’s daughter, is fascinated by magic and witches. When she spies on the witch Qifrey, she discovers her favorite picture book is actually a magic book and starts experimenting with spells.</p>
+        <p class="card-text">After a spell causes a disaster at home, Qifrey rescues Coco and decides to train her. He believes she can help him track down the Brimmed Caps, a dangerous group of heretics. But first, Coco must improve her magical skills and get along with Qifrey’s other apprentices.
+        </p>
+        <p class="card-text"><strong>$14.99</strong></p>
+        <a href="#" class="btn btn-warning">Add to Cart</a>
+      </div>
+    </div>
+
+    
+    
+  </div>
+</section>
+
+
+
+    
+<section>
+  <!--NEW ARRIVALS-->
+  <h2 style="font-size: 64px;">New Arrivals</h2>
+  <div id="1cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true" data-bs-interval="3000">
+    <!-- Indicators (optional) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#1cardCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#1cardCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#1cardCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="carousel-item active">
+        <div class="card-group">
+          <div class="card">
+            <img src="images/last-quarter.jpg" class="card-img-top" alt="Last Quarter">
+            <div class="card-body text-center">
+              <h5 class="card-title">Last Quarter</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
               </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/disney-twisted.jpg" class="card-img-top" alt="Disney Twisted-Wonderland">
+            <div class="card-body text-center">
+              <h5 class="card-title">Disney Twisted-Wonderland</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
+              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/grim-reaper.jpg" class="card-img-top" alt="I'm the Grim Reaper">
+            <div class="card-body text-center">
+              <h5 class="card-title">I’m the Grim Reaper</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
+              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    
-    <section>
-      <!--NEW ARRIVALS-->
-        <h2 style="font-size: 64px;">New Arrivals</h2>
-        <div id="1cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true" data-bs-interval="3000">
-          <!-- Indicators (optional) -->
-          
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#1cardCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#1cardCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#1cardCarousel" data-bs-slide-to="2"></button>
-          </div>
-        
-        
-          <!-- Carousel Inner -->
-          <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-              <div class="card-group">
-                <div class="card">
-                  <img src="images/last-quarter.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Last Quarter</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/disney-twisted.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Disney Twisted-Wonderland</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/grim-reaper.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">I’m the Grim Reaper</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
+
+      <!-- Second Slide -->
+      <div class="carousel-item">
+        <div class="card-group">
+          <div class="card">
+            <img src="images/trillion.jpg" class="card-img-top" alt="Trillion Game">
+            <div class="card-body text-center">
+              <h5 class="card-title">Trillion Game</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
               </div>
-            </div>
-        
-            <!-- Second Slide (if more cards) -->
-            <!-- Carousel Inner -->
-          <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-              <div class="card-group">
-                <div class="card">
-                  <img src="images/trillion.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Trillion Game</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/doron.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Doron Dororon</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/otaku-vampire.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Otaku Vampire’s Love Bite</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Add more carousel items for more slides if needed -->
-             <!-- Carousel Inner -->
-          <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-              <div class="card-group">
-                <div class="card">
-                  <img src="images/destroy-all-human.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Destroy All Humans</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/octo-girl.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Spider-Man: Octo-Girl</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/collette.jpg" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Colette Decides to Die, Vol. 1</h5>
-                    <div class="d-flex justify-content-center align-items-center my-3">
-                      <button type="button" class="btn btn-secondary">-</button>
-                      <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
-                      <button type="button" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-warning">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
             </div>
           </div>
-        
-          <!-- Carousel Controls (optional) -->
-          <a class="carousel-control-prev" href="#1cardCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#1cardCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
+          <div class="card">
+            <img src="images/doron.jpg" class="card-img-top" alt="Doron Dororon">
+            <div class="card-body text-center">
+              <h5 class="card-title">Doron Dororon</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
+              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/otaku-vampire.jpg" class="card-img-top" alt="Otaku Vampire’s Love Bite">
+            <div class="card-body text-center">
+              <h5 class="card-title">Otaku Vampire’s Love Bite</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
+              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
         </div>
-        
-    </section>
+      </div>
+
+      <!-- Third Slide -->
+      <div class="carousel-item">
+        <div class="card-group">
+          <div class="card">
+            <img src="images/destroy-all-human.jpg" class="card-img-top" alt="Destroy All Humans">
+            <div class="card-body text-center">
+              <h5 class="card-title">Destroy All Humans</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
+              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/octo-girl.jpg" class="card-img-top" alt="Octo-Girl">
+            <div class="card-body text-center">
+              <h5 class="card-title">Spider-Man: Octo-Girl</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
+              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/collette.jpg" class="card-img-top" alt="Colette Decides to Die, Vol. 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Colette Decides to Die, Vol. 1</h5>
+              <div class="d-flex justify-content-center align-items-center my-3">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control mx-2" style="width: 60px;">
+                <button type="button" class="btn btn-secondary">+</button>
+              </div>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls (optional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#1cardCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#1cardCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
 <br>
     <section>
       <!--BEST SELLERS-->
