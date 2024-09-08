@@ -36,18 +36,18 @@ h5 {
 }
 
 .card-img-top {
-    height: 500px; /* Set your desired height */
+    height: 700px; /* Set your desired height */
     object-fit: cover; /* Ensures the image covers the entire area */
   }
   
-  @media (min-width: 640px) {
+  @media (min-width: 300px) {
     .navbar-expand .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
     }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 299px) {
     .navbar-collapse {
         display: none !important;
     }
