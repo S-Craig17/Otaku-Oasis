@@ -25,6 +25,7 @@
     </header>
 
     <main class="checkout-page">
+        
         <div class="container">
             <h1 class="mb-4">Checkout</h1>
 
@@ -118,6 +119,20 @@
                     </div>
                 </div>
 
+                <table id="cart-table">
+                    <thead>
+                      <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Cart items will be inserted here -->
+                    </tbody>
+                  </table>
+
                 <!-- Order Confirmation -->
                 <div class="col-md-6">
                     <div class="card">
@@ -136,5 +151,22 @@
     </footer>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Get the cart items from local storage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartTableBody = document.querySelector('#cart-table tbody');
+        
+        // Display each item in the table
+        cart.forEach(item => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${item.title}</td>
+            <td>${item.price}</td>
+            <td>${item.quantity}</td>
+            <td>${(item.price * item.quantity).toFixed(2)}</td>
+          `;
+          cartTableBody.appendChild(row);
+        });
+        </script>
 </body>
 </html>
